@@ -1,0 +1,35 @@
+SarahLab sarah = new SarahLab(3);
+sarah.setRoom("G301");
+sarah.setInstructor("NIck");
+sarah.setTime("Friday10.30");
+sarah.printList();
+Lab class Friday10.30
+Instructor: NIck   Room: G301
+Class list:
+Number of students: 0
+Student student1 = new Student("Karl", "159");
+Student bob = new Student("Bob", "753");
+Student anna = new Student("Anna", "369");
+sarah.enrollStudent(student1);
+sarah.enrollStudent(anna);
+sarah.enrollStudent(bob);
+sarah.printList();
+Lab class Friday10.30
+Instructor: NIck   Room: G301
+Class list:
+Karl, student ID: 159, credits: 0
+Anna, student ID: 369, credits: 0
+Bob, student ID: 753, credits: 0
+Number of students: 3
+student1.addCredits(20);
+bob.addCredits(20);
+anna.addCredits(20);
+anna.changeName("Ann");
+sarah.printList();
+Lab class Friday10.30
+Instructor: NIck   Room: G301
+Class list:
+Karl, student ID: 159, credits: 20
+Ann, student ID: 369, credits: 20
+Bob, student ID: 753, credits: 20
+Number of students: 3

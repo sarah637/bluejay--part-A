@@ -6,6 +6,7 @@
  * @version (0.1)
  */
 public; class Course
+{
     // instance variables - replace the example below with your own
    private String title;"computing"
   

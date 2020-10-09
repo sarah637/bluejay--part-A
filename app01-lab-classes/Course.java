@@ -5,20 +5,28 @@
  * @author (sarah)
  * @version (0.1)
  */
-public; class Course
+public class Course
 {
     // instance variables - replace the example below with your own
-   private String title;"computing"
+   private String title;
   
-   private String code;"G4oo"
+   private String code;
     /**
      * Constructor for objects of class Course
      */
-    public Course()
+    public Course(String title,String code)
     {
-        // initialise instance variables
+        // ini
+        this.title=title;
+        this.code=code;
         
-    }
-
+        
+        
+        
+    } 
+ public void print()
+{
+    System.out.println("course"+ title + ",course code" + code);
     
+}
 }

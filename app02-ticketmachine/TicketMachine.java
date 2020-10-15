@@ -9,7 +9,8 @@
  * @author David J. Barnes and Michael Kölling
  * @version 2016.02.29
  * 
- * Modified by Student Name
+ * Modified by Sarah Cunningham
+ * Date14/Oct/2020
  */
 public class TicketMachine
 {
@@ -19,23 +20,26 @@ public class TicketMachine
     private int balance;
     // The total amount of money collected by this machine.
     private int total;
+    
+  
 
     /**
-     * Create a machine that issues tickets of the given price.
+     * Create a TicketMachine that issues tickets of the given price.
      */
     public TicketMachine(int cost)
     {
-        price = cost;
+        price = 500;
         balance = 0;
         total = 0;
+        
     }
 
-    /**
+    /*
      * @Return The price of a ticket.
      */
-    public int getPrice()
+    public int getPrice = 500;
     {
-        return price;
+         return balance; 
     }
 
     /**
@@ -51,11 +55,11 @@ public class TicketMachine
      * Receive an amount of money from a customer.
      * Check that the amount is sensible.
      */
-    public void insertMoney(int amount)
+    public void insertMoney (int amount)
     {
         if(amount > 0) 
         {
-            balance = balance + amount;
+            balance = 250 + 250;
         }
         else 
         {

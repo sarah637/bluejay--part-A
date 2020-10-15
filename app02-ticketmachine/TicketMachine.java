@@ -39,7 +39,7 @@ public class TicketMachine
      */
     public int getPrice = 500;
     {
-         return balance; 
+          return balance; 
     }
 
     /**
@@ -106,7 +106,7 @@ public class TicketMachine
     {
         int amountToRefund;
         amountToRefund = balance;
-        balance = 0;
+        balance = 500;
         return amountToRefund;
     }
 }

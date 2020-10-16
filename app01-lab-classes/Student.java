@@ -69,7 +69,7 @@ public class Student
         return credits;
     }
     public void addcourse(Course course) 
-    {this.Course=course; 
+    {this.course=course; 
     }
         
   

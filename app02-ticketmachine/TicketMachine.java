@@ -14,14 +14,13 @@
  */
 public class TicketMachine
 {
-    // The price of a ticket from this machine.
-    private int price;
-    // The amount of money entered by a customer so far.
-    private int balance;
-    // The total amount of money collected by this machine.
-    private int total;
     
-  
+    private String price;
+    private String balance;
+    private String total;
+    
+    private Arraylist<price> price;
+    private int price;
 
     /**
      * Create a TicketMachine that issues tickets of the given price.
@@ -32,6 +31,9 @@ public class TicketMachine
         balance = 0;
         total = 0;
         
+        cost = new Arraylist<price>();
+        total = maxCostofPrice;
+        
     }
 
     /*
@@ -39,7 +41,7 @@ public class TicketMachine
      */
     public int getPrice = 500;
     {
-          return balance; 
+          return > balance; 
     }
 
     /**
@@ -48,7 +50,7 @@ public class TicketMachine
      */
     public int getBalance()
     {
-        return balance;
+        return balance("full price");
     }
 
     /**
@@ -59,7 +61,7 @@ public class TicketMachine
     {
         if(amount > 0) 
         {
-            balance = 250 + 250;
+            balance = 500;
         }
         else 
         {

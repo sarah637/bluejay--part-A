@@ -1,4 +1,6 @@
-/**
+
+                          
+    /**
  * TicketMachine models a ticket machine that issues
  * flat-fare tickets.
  * The price of a ticket is specified via the constructor.
@@ -15,33 +17,33 @@
 public class TicketMachine
 {
     
-    private String price;
-    private String balance;
-    private String total;
-    
-    private Arraylist<price> price;
     private int price;
-
+    private int balance;
+    private int total;
+    
+    private Ticket ticket;
+    
+    private Coin coin;
+    
     /**
      * Create a TicketMachine that issues tickets of the given price.
      */
     public TicketMachine(int cost)
     {
-        price = 500;
-        balance = 0;
-        total = 0;
+        price = cost;
+        balance=0;
+        total=0;
         
-        cost = new Arraylist<price>();
-        total = maxCostofPrice;
+       
         
     }
 
     /*
      * @Return The price of a ticket.
      */
-    public int getPrice = 500;
+    public int getPrice() 
     {
-          return > balance; 
+          return price;
     }
 
     /**
@@ -50,7 +52,7 @@ public class TicketMachine
      */
     public int getBalance()
     {
-        return balance("full price");
+        return balance;
     }
 
     /**
@@ -61,7 +63,7 @@ public class TicketMachine
     {
         if(amount > 0) 
         {
-            balance = 500;
+            balance = balance + amount;
         }
         else 
         {
@@ -69,7 +71,10 @@ public class TicketMachine
                                amount);
         }
     }
-
+    public void insertCoin(Coin coin)
+    
+    { balance = balance + coin.getValue();
+    }
     /**
      * Print a ticket if enough money has been inserted, and
      * reduce the current balance by the ticket price. Print
@@ -82,8 +87,9 @@ public class TicketMachine
             // Simulate the printing of a ticket.
             System.out.println("##################");
             System.out.println("# The BlueJ Line");
-            System.out.println("# Ticket");
-            System.out.println("# " + price + " cents.");
+            System.out.println("# Ticket to" + ticket.getDestination());
+            System.out.println("# " + ticket.getPrice() + " cents.");
+            System.out.println("# " + ticket.getDate());
             System.out.println("##################");
             System.out.println();
 
@@ -108,7 +114,9 @@ public class TicketMachine
     {
         int amountToRefund;
         amountToRefund = balance;
-        balance = 500;
+        balance = 220;
         return amountToRefund;
     }
 }
+
+    

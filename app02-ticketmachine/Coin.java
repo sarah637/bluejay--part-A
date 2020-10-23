@@ -2,21 +2,21 @@
 /**
  * Write a description of class Coin here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Sarah Cunningham
+ * @version (23/10/2020)
  */
 public class Coin
 {
     // instance variables - replace the example below with your own
-    private int x;
+    private int value;
 
     /**
      * Constructor for objects of class Coin
      */
-    public Coin()
+    public Coin(int value)
     {
         // initialise instance variables
-        x = 0;
+        this.value = value;
     }
 
     /**
@@ -25,9 +25,9 @@ public class Coin
      * @param  y  a sample parameter for a method
      * @return    the sum of x and y
      */
-    public int sampleMethod(int y)
+    public int getValue()
     {
         // put your code here
-        return x + y;
+        return value;
     }
 }

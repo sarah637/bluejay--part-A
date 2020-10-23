@@ -87,7 +87,7 @@ public class TicketMachine
             // Simulate the printing of a ticket.
             System.out.println("##################");
             System.out.println("# The BlueJ Line");
-            System.out.println("# Ticket to" + ticket.getDestination());
+            System.out.println("# " + ticket.to + ticket.getDestination());
             System.out.println("# " + ticket.getPrice() + " cents.");
             System.out.println("# " + ticket.getDate());
             System.out.println("##################");

@@ -1,6 +1,6 @@
 
 /**
- * Write a description of class Coin here.
+ * This class represents the coin value.
  *
  * @author Sarah Cunningham
  * @version (23/10/2020)

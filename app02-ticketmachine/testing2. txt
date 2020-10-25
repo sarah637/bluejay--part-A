@@ -1,0 +1,125 @@
+TicketMachine ticketMa1 = new TicketMachine();
+ticketMa1.insertMoney(500);
+ticketMa1.selectAmershamTicket();
+ticketMa1.printTicket();
+    Exception occurred.
+TicketMachine ticketMa1 = new TicketMachine();
+ticketMa1.insertMoney(500);
+ticketMa1.selectAmershamTicket();
+ticketMa1.printTicket();
+##################
+# The BlueJ Line
+# Amersham
+# 330 ster.
+# Sun Oct 25 15:38:06 GMT 2020
+##################
+Coin coin = new Coin(200);
+ticketMa1.insertCoin(coin);
+Coin twentypence = new Coin(20);
+ticketMa1.insertCoin(twentypence);
+ticketMa1.getBalance()
+    returned int 390
+ticketMa1.refundBalance()
+    returned int 390
+ticketMa1.refundBalance()
+    returned int 0
+TicketMachine ticketMa1 = new TicketMachine();
+ticketMa1.refundBalance()
+    returned int 0
+ticketMa1.printBalance();
+balance = 0
+TicketMachine ticketMa1 = new TicketMachine();
+ticketMa1.getBalance()
+    returned int 0
+ticketMa1.selectAmershamTicket();
+ticketMa1.printBalance();
+balance = 0
+ticketMa1.insertMoney(500);
+ticketMa1.selectAmershamTicket();
+ticketMa1.printTicket();
+##################
+# The BlueJ Line
+# Amersham
+# 330 ster.
+# Sun Oct 25 16:22:57 GMT 2020
+##################
+ticketMa1.selectAylesburyTicket();
+ticketMa1.printTicket();
+You must insert at least: 50 more sterling.
+ticketMa1.insertMoney(500);
+ticketMa1.selectAylesburyTicket();
+ticketMa1.printTicket();
+##################
+# The BlueJ Line
+# Aylesbury
+# 220 ster.
+# Sun Oct 25 16:22:57 GMT 2020
+##################
+ticketMa1.selectHighWycombeTicket();
+ticketMa1.printTicket();
+##################
+# The BlueJ Line
+# High Wycombe
+# 300 ster.
+# Sun Oct 25 16:22:57 GMT 2020
+##################
+ticketMa1.printAllTickets();
+the following three destinations are avaliable
+
+Ticket toAylesbury
+ 220 pence Sun Oct 25 16:22:57 GMT 2020
+
+Ticket toAmersham
+ 330 pence Sun Oct 25 16:22:57 GMT 2020
+
+Ticket toHigh Wycombe
+ 300 pence Sun Oct 25 16:22:57 GMT 2020
+please select your ticket destination
+Coin twentypence = new Coin(20);
+Coin tenpence = new Coin(10);
+Coin twopounds = new Coin(200);
+Coin onepound = new Coin(100);
+ticketMa1.insertCoin(twopounds);
+ticketMa1.insertCoin(onepound);
+ticketMa1.selectHighWycombeTicket();
+ticketMa1.printTicket();
+##################
+# The BlueJ Line
+# High Wycombe
+# 300 ster.
+# Sun Oct 25 16:22:57 GMT 2020
+##################
+ticketMa1.printBalance();
+balance = 150
+ticketMa1.insertMoney(200);
+ticketMa1.insertCoin(twopounds);
+ticketMa1.insertCoin(twentypence);
+ticketMa1.selectAylesburyTicket();
+ticketMa1.printTicket();
+##################
+# The BlueJ Line
+# Aylesbury
+# 220 ster.
+# Sun Oct 25 16:22:57 GMT 2020
+##################
+ticketMa1.printBalance();
+balance = 350
+ticketMa1.insertCoin(twentypence);
+ticketMa1.insertCoin(tenpence);
+ticketMa1.insertCoin(twopounds);
+ticketMa1.insertCoin(onepound);
+ticketMa1.selectAmershamTicket();
+ticketMa1.printAllTickets();
+the following three destinations are avaliable
+
+Ticket toAylesbury
+ 220 pence Sun Oct 25 16:22:57 GMT 2020
+
+Ticket toAmersham
+ 330 pence Sun Oct 25 16:22:57 GMT 2020
+
+Ticket toHigh Wycombe
+ 300 pence Sun Oct 25 16:22:57 GMT 2020
+please select your ticket destination
+ticketMa1.printBalance();
+balance = 680

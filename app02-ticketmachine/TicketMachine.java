@@ -42,6 +42,9 @@ public class TicketMachine
         
         buyTicket= null; 
         amershamTicket = new Ticket("Amersham",330);
+        aylesburyTicket = new Ticket("Aylesbury", 220);
+        highWycombeTicket = new Ticket("High Wycombe", 300);
+        
         ticket = new ArrayList<Ticket>();
         
     }
@@ -49,6 +52,7 @@ public class TicketMachine
     {
         this.aylesburyTicket = aylesburyTicket;
         this.highWycombeTicket = highWycombeTicket;
+        this.amershamTicket = amershamTicket;
     }
     
     public void addTicket(Ticket newTicket)
@@ -146,11 +150,17 @@ public class TicketMachine
      * The balance is cleared.
      */
     public int refundBalance()
+   
     {
         int amountToRefund;
         amountToRefund = balance;
         balance = 0;
         return amountToRefund;
+    }
+    
+    public void printBalance()
+    { 
+        System.out.println("balance = " + balance);
     }
 }
 

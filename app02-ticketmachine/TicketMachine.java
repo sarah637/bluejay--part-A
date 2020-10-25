@@ -1,4 +1,4 @@
-
+import java.util.*;
                           
     /**
  * TicketMachine models a ticket machine that issues
@@ -16,36 +16,47 @@
  */
 public class TicketMachine
 {
-    
+    private Ticket buyTicket;
     private int price;
     private int balance;
     private int total;
     
-    private Ticket ticket;
+    private Ticket aylesburyTicket; 
+    private Ticket highWycombeTicket; 
+    private Ticket amershamTicket; 
+   
     
     private Coin coin;
+    private ArrayList<Ticket> ticket;
     
     /**
      * Create a TicketMachine that issues tickets of the given price.
      */
-    public TicketMachine(int cost)
+    public TicketMachine()
     {
-        price = cost;
-        balance=0;
-        total=0;
+      
+        balance= 0;
+        total= 0;
+        createTickets();
         
-       
+        
+        buyTicket= null; 
+        amershamTicket = new Ticket("Amersham",330);
+        ticket = new ArrayList<Ticket>();
         
     }
-
-    /*
-     * @Return The price of a ticket.
-     */
-    public int getPrice() 
+    private void createTickets()
     {
-          return price;
+        this.aylesburyTicket = aylesburyTicket;
+        this.highWycombeTicket = highWycombeTicket;
     }
-
+    
+    public void addTicket(Ticket newTicket)
+    {
+        {
+            ticket.add(newTicket);
+        }
+    }
     /**
      * Return The amount of money already inserted for the
      * next ticket.
@@ -71,10 +82,27 @@ public class TicketMachine
                                amount);
         }
     }
+    
     public void insertCoin(Coin coin)
     
     { balance = balance + coin.getValue();
     }
+    
+    public void selectAylesburyTicket()
+    {
+        buyTicket = aylesburyTicket;
+    } 
+    
+     public void selectAmershamTicket()
+    {
+        buyTicket = amershamTicket;
+    } 
+    
+     public void selectHighWycombeTicket()
+    {
+        buyTicket = highWycombeTicket;
+    } 
+    
     /**
      * Print a ticket if enough money has been inserted, and
      * reduce the current balance by the ticket price. Print
@@ -82,17 +110,17 @@ public class TicketMachine
      */
     public void printTicket()
     {
-        if(balance >= price) 
+        price = buyTicket.getPrice();
+        if(balance >= buyTicket.getPrice())
         {
             // Simulate the printing of a ticket.
             System.out.println("##################");
             System.out.println("# The BlueJ Line");
-            System.out.println("# " + ticket.to + ticket.getDestination());
-            System.out.println("# " + ticket.getPrice() + " cents.");
-            System.out.println("# " + ticket.getDate());
+            System.out.println("# " + buyTicket.getDestination());
+            System.out.println("# " + buyTicket.getPrice() + " ster.");
+            System.out.println("# " + buyTicket.getDate());
             System.out.println("##################");
-            System.out.println();
-
+            
             // Update the total collected with the price.
             total = total + price;
             // Reduce the balance by the price.
@@ -101,11 +129,18 @@ public class TicketMachine
         else 
         {
             System.out.println("You must insert at least: " +
-                               (price - balance) + " more cents.");
+                               (price - balance) + " more sterling.");
                     
         }
     }
-
+    public void printAllTickets()
+    {
+        System.out.println("the following three destinations are avaliable");
+        aylesburyTicket.print();
+        amershamTicket.print();
+        highWycombeTicket.print();
+        System.out.println("please select your ticket destination");
+    }
     /**
      * Return the money in the balance.
      * The balance is cleared.
@@ -114,7 +149,7 @@ public class TicketMachine
     {
         int amountToRefund;
         amountToRefund = balance;
-        balance = 220;
+        balance = 0;
         return amountToRefund;
     }
 }

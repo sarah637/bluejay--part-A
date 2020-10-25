@@ -1,0 +1,23 @@
+TicketMachine ticketMa1 = new TicketMachine();
+ticketMa1.insertMoney(500);
+ticketMa1.selectAmershamTicket();
+ticketMa1.printTicket();
+    Exception occurred.
+TicketMachine ticketMa1 = new TicketMachine();
+ticketMa1.insertMoney(500);
+ticketMa1.selectAmershamTicket();
+ticketMa1.printTicket();
+##################
+# The BlueJ Line
+# Amersham
+# 330 ster.
+# Sun Oct 25 15:38:06 GMT 2020
+##################
+Coin coin = new Coin(200);
+ticketMa1.insertCoin(coin);
+Coin twentypence = new Coin(20);
+ticketMa1.insertCoin(twentypence);
+ticketMa1.getBalance()
+    returned int 390
+ticketMa1.refundBalance()
+    returned int 390

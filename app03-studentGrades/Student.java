@@ -26,6 +26,10 @@ public class Student
         credits = 0;
     }
 
+    {
+        course = Course;
+    }
+    
     /**
      * Return the full name of this student.
      */

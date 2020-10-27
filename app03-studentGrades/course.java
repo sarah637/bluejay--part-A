@@ -1,6 +1,7 @@
+import java.util.*;
 
 /**
- * Write a description of class course here.
+ *  course represents a students course.
  *
  * @author Sarah Cunningham
  * @version 26/10/2020
@@ -8,26 +9,28 @@
 public class course
 {
     // instance variables - replace the example below with your own
-    private int x;
-
+    private 
+    
     /**
      * Constructor for objects of class course
      */
-    public course()
+    private String codeNo; 
+    private String title;
+    
     {
         // initialise instance variables
-        x = 0;
+        this. codeNo = codeNo;
+        this. title = title;
     }
 
+    public void 
     /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
+     * print course
+     * 
      */
-    public int sampleMethod(int y)
+    public void print();
     {
         // put your code here
-        return x + y;
+       system.out.println("course" + codeNo + " - " title); 
     }
 }

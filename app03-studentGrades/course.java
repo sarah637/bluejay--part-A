@@ -9,21 +9,32 @@ import java.util.*;
 public class course
 {
     // instance variables - replace the example below with your own
-    private 
+    private String codeNo; 
+    private String title; 
+    
+    private Module module1;
+    private Module module2;
+    private Module module3;
+    private Module module4;
+    
     
     /**
-     * Constructor for objects of class course
+     * Constructer for objects of class Course
      */
-    private String codeNo; 
-    private String title;
-    
+    public course(String codeNo, String title); 
     {
         // initialise instance variables
         this. codeNo = codeNo;
         this. title = title;
+        
+        module1 = new Module("programming concepts", "CO452");
     }
 
-    public void 
+    public void addModule(Module module, int moduleNo)
+    {
+    
+    
+    }
     /**
      * print course
      * 

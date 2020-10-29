@@ -10,7 +10,9 @@ public class module
 {
     // instance variables - replace the example below with your own
     private int mark;
+   
     private String title;
+    
     private String codeNo;
 
    
@@ -28,7 +30,7 @@ public class module
     public void print()
     {
       System.out.println("Module; " + codeNo + 
-      " " + title + " Mark = " + mark);
+         " " + title + " Mark = " + mark);
     }  
 }
     

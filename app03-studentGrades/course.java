@@ -23,7 +23,7 @@ public class course
     /**
      * Constructer for objects of class Course
      */
-    public course(String codeNo, String title); 
+    public Course(String codeNo, String title)
     {
         // initialise instance variables
         this. codeNo = codeNo;
@@ -35,12 +35,12 @@ public class course
         createModules();
     }
 
-    public void acreateModules();
+    public void createModules()
     {
-      module1 = new Module("programming concepts", "CO452");
-      moudle2 = new Module("programming concepts", "CO452");
-      module3 = new Module("programming concepts", "CO452");
-      module4 = new Module("proggraming concepts", "CO452");
+       module1 = new Module("CO452", "programming concepts");
+       module2 = new Module("CO452", "programming concepts");
+       module3 = new Module("CO452", "programming concepts");
+       module4 = new Module("CO452", "proggraming concepts");
     
     }
     
@@ -65,8 +65,9 @@ public class course
     {
         if(courseCompleted())
            {
-            int totalMark = module1.getMark() + module2.getMark() + 
-                module3.geMark() + module4.getMark();
+            
+               int totalMark = module1.getMark() + module2.getMark() + 
+                   module3.getMark() + module4.getMark();
                 
                 
                 finalMark = totalMark / 4;
@@ -83,10 +84,9 @@ public class course
     public boolean courseCompleted()
     
     {
-        if((moduel1.isCompleted()) && (module2.iCcompleted())) 
-        (module3.isCompleted())) && (module4 .isCompleted()))
+        if((module1.isCompleted()) && (module2.isCompleted())) 
         {
-            return true;
+            return true; 
         }
         else return false;
     }
@@ -97,7 +97,7 @@ public class course
     public void print()
     {
         // put your code here
-        system.out.println("course" + codeNo + " - " + title); 
+        System.out.println("course" + codeNo + " - " + title); 
     }
     
     public void printModules()

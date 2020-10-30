@@ -23,7 +23,7 @@ public class course
     /**
      * Constructer for objects of class Course
      */
-    public Course(String codeNo, String title)
+    public course (String codeNo, String title)
     {
         // initialise instance variables
         this. codeNo = codeNo;
@@ -37,10 +37,10 @@ public class course
 
     public void createModules()
     {
-       module1 = new Module("CO452", "programming concepts");
-       module2 = new Module("CO452", "programming concepts");
-       module3 = new Module("CO452", "programming concepts");
-       module4 = new Module("CO452", "proggraming concepts");
+       module1 = new Module ("CO452", "programming concepts");
+       module2 = new Module ("CO452", "programming concepts");
+       module3 = new Module ("CO452", "programming concepts");
+       module4 = new Module ("CO452", "proggraming concepts");
     
     }
     
@@ -98,6 +98,7 @@ public class course
     {
         // put your code here
         System.out.println("course" + codeNo + " - " + title); 
+        
     }
     
     public void printModules()
@@ -107,7 +108,14 @@ public class course
         
         if(courseCompleted())
         {
-            System.out.println("FinalMark =" + finalMark);
+            System.out.println("Modules: ");
+            module1.print();
+            module2.print();
+            module3.print();
+            module4.print();
+            
+            System.out.println("FinalMark =" + courseMark);
+            System.out.println("FinalGrade=" + converttoGrade(courseMark));
         }
     }
 }

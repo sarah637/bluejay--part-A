@@ -14,7 +14,12 @@ public class module
     private String title;
     
     private String codeNo;
-
+    
+    private int credit;
+    
+    private boolean completed;
+    
+    private boolean passed;
    
     /**
      * Constructor for objects of class module
@@ -22,11 +27,69 @@ public class module
     public module(String title, String codeNo) 
     
     {
-      mark = 0;
+      mark = -1;
       this. title = title;
       this.codeNo = codeNo;
+      credit = 0;
+      completed = false;
     }
-     
+    
+    /**
+     * Get module title
+     */
+    public String getTitle()
+    {
+        return title;
+    }
+    
+    /**
+     * module code number
+     */
+    public String getCodeNo()
+    {
+        return codeNo;
+    }
+    
+    /**
+     * Award a mark
+     */
+    public void awardMark(int mark)
+    {
+      this.mark = mark;
+    }
+    
+    /**
+     * retrieve a mark
+     */
+    public int getMark()
+    {
+       return mark; 
+    }
+    
+    public boolean isComplete()
+    {
+        if(mark >= 40)
+        {
+            credit = 15;
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    
+    /**
+     * Retrieve credit
+     */
+    public int getCredit()
+    {
+        return credit;
+    }
+    
+    /**
+     * print information
+     */
     public void print()
     {
       System.out.println("Module; " + codeNo + 

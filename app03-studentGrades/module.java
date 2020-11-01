@@ -19,7 +19,7 @@ public class Module
     
     private boolean completed;
     
-    private boolean passed;
+    
    
     /**
      * Constructor for objects of class module

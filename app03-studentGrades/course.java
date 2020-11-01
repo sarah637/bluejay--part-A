@@ -170,6 +170,15 @@ public class Course
             System.out.print("No mark awarded");
         }
     }
+    
+    /**
+     * Calculate the credit
+     */
+    public void calculateCredit()
+    {
+        credit = module1.getCredit() + module2.getCredit() + 
+                module3.getCredit() + module4.getCredit();
+    }
 
     /**
      * prints out the details of a course
@@ -190,7 +199,7 @@ public class Course
 
         //print all the module marks
 
-        System.out.println("Modules: ");
+        System.out.println("Modules:");
         
         module1.print();
         module2.print();

@@ -26,6 +26,7 @@ public class Student
         name = fullName;
         id = studentID;
         credits = 0;
+        this.course = course;
     }
     
     /**
@@ -87,7 +88,13 @@ public class Student
         System.out.println(name + ", student ID: " + id + ", credits: " + credits);
     }
   
-   public void enrollOnCourse(Course course);
-    
-    
+   public void addCourse(Course newCourse)
+   {
+       {
+           course = newCourse;
+       }
+   }
+   
+
+
 }

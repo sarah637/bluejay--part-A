@@ -6,7 +6,7 @@ import java.util.*;
  * @author Sarah Cunningham
  * @version 26/10/2020
  */
-public class module
+public class Module
 {
     // instance variables - replace the example below with your own
     private int mark;
@@ -24,7 +24,7 @@ public class module
     /**
      * Constructor for objects of class module
      */
-    public module(String title, String codeNo) 
+    public Module(String title, String codeNo) 
     
     {
       mark = -1;

@@ -12,16 +12,16 @@ public class Ticket
     private int price;
     private String destination;
     private Date date;
-    
+
     /**
      * Constructor for objects of class ticket
      */
     public Ticket(String destination, int price)
     {
         // initialise instance variables
-       this.price = price;
-       this.destination = destination;
-       date = new Date();
+        this.price = price;
+        this.destination = destination;
+        date = new Date();
     }
 
     /**
@@ -35,19 +35,28 @@ public class Ticket
         // put your code here
         return price;
     }
-    
-     public String getDestination()
+
+    /**
+     * call destination
+     */
+    public String getDestination()
     {
         // put your code here
         return destination;
     } 
-    
+
+    /**
+     * imput a date
+     */
     public Date getDate()
     {
         // put your code here
         return date;
     }
-    
+
+    /**
+     * complete print ticket
+     */
     public void print() 
     {
         System.out.println();

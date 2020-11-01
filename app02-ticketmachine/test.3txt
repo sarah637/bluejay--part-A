@@ -1,0 +1,57 @@
+TicketMachine ticketMa1 = new TicketMachine();
+TicketMachine ticketMa1 = new TicketMachine();
+Coin tenpence = new Coin(10);
+Coin twentypence = new Coin(20);
+Coin onepound = new Coin(100);
+Coin twopounds = new Coin(200);
+Ticket ticket1 = new Ticket("Aylesbury", 220);
+Ticket ticket2 = new Ticket("highWycombe", 300);
+Ticket ticket3 = new Ticket("Amersham", 330);
+ticketMa1.insertCoin(twopounds);
+ticketMa1.insertCoin(twentypence);
+ticketMa1.getBalance()
+    returned int 220
+ticketMa1.insertMoney(220);
+ticketMa1.printBalance();
+balance = 440
+ticketMa1.getBalance()
+    returned int 440
+ticketMa1.refundBalance()
+    returned int 440
+ticketMa1.insertMoney(220);
+ticketMa1.selectAylesburyTicket();
+ticketMa1.printTicket();
+##################
+# The BlueJ Line
+# Aylesbury
+# 220 ster.
+# Sun Nov 01 12:04:00 GMT 2020
+##################
+ticketMa1.insertMoney(300);
+ticketMa1.getBalance()
+    returned int 300
+ticketMa1.selectHighWycombeTicket();
+ticketMa1.printTicket();
+##################
+# The BlueJ Line
+# High Wycombe
+# 300 ster.
+# Sun Nov 01 12:04:00 GMT 2020
+##################
+ticketMa1.insertMoney(300);
+ticketMa1.selectAmershamTicket();
+ticketMa1.printTicket();
+You must insert at least: 30 more sterling.
+ticketMa1.refundBalance()
+    returned int 300
+ticketMa1.getBalance()
+    returned int 0
+ticketMa1.insertMoney(330);
+ticketMa1.selectAmershamTicket();
+ticketMa1.printTicket();
+##################
+# The BlueJ Line
+# Amersham
+# 330 ster.
+# Sun Nov 01 12:04:00 GMT 2020
+##################

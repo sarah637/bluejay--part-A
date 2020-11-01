@@ -1,15 +1,13 @@
 import java.util.*;
 
 /**
- *  course represents a students course.
+ *  course represents students complete course of 4 modules.
  *
  * @author Sarah Cunningham
  * @version 26/10/2020
  */
 public class Course
 {
-
-    // instance variables - replace the example below with your own
     private String codeNo; 
     private String title; 
 
@@ -38,7 +36,9 @@ public class Course
         createModules();
     }
 
-            
+    /**
+     * This method creates four default modules to make testing easier
+     */        
     public void createModules()
     {
         module1 = new Module("CO452 ", "programming concepts");
@@ -48,6 +48,9 @@ public class Course
 
     }
 
+    /** 
+     * Add modules to a course
+     */
     public void addModule(Module module, int moduleNo)
     {
         if(moduleNo == 1)
@@ -75,6 +78,9 @@ public class Course
         }
     }
 
+    /**
+     * Method to award marks to a module
+     */
     public void setMarkI(int mark, int moduleNo)
     {
         if(moduleNo == 1) 
@@ -101,6 +107,9 @@ public class Course
         }
     }
 
+    /**
+     * calculate final mark to the course from the module marks
+     */
     public void calculateFinalMark()
     {
         if(courseCompleted())
@@ -111,7 +120,6 @@ public class Course
             finalMark = totalMark / 4;
 
             print();
-
         }
         else
         {
@@ -119,12 +127,13 @@ public class Course
         }      
     }
 
-
+    /**
+     * course module completed
+     */
     public boolean courseCompleted() 
-
     {  
         if((module1.isComplete()) && (module2.isComplete()) &&
-           (module3.isComplete()) && (module4.isComplete()))
+        (module3.isComplete()) && (module4.isComplete()))
         {
             return true; 
         }
@@ -173,13 +182,16 @@ public class Course
 
     }
 
+    /**
+     * print all modules
+     */
     public void printModules()
     {
 
         //print all the module marks
 
         System.out.println("Modules: ");
-            
+        
         module1.print();
         module2.print();
         module3.print();

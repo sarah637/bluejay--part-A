@@ -1,0 +1,101 @@
+Course course1 = new Course("CO452", "programming concepts");
+Course course1 = new Course("G400", "Computing");
+course1.printModules();
+Modules: 
+Module; programming concepts CO452  Mark = -1
+Module; computer Architectures CO450  Mark = -1
+Module; cyber Threat and risk management CO404  Mark = -1
+Module; web development CO456  Mark = -1
+course1.setMarkI(60, 1);
+course1.setMarkI(50, 2);
+course1.setMarkI(60, 3);
+course1.setMarkI(50, 4);
+course1.print();
+courseG400 - Computing
+Modules: 
+Module; programming concepts CO452  Mark = 60
+Module; computer Architectures CO450  Mark = 50
+Module; cyber Threat and risk management CO404  Mark = 60
+Module; web development CO456  Mark = 50
+Final Mark =-1
+Final Grade=null
+Final Credit=0
+course1.calculateFinalMark();
+courseG400 - Computing
+Modules: 
+Module; programming concepts CO452  Mark = 60
+Module; computer Architectures CO450  Mark = 50
+Module; cyber Threat and risk management CO404  Mark = 60
+Module; web development CO456  Mark = 50
+Final Mark =55
+Final Grade=null
+Final Credit=0
+course1.calculateGrade();
+course1.print();
+courseG400 - Computing
+Modules: 
+Module; programming concepts CO452  Mark = 60
+Module; computer Architectures CO450  Mark = 50
+Module; cyber Threat and risk management CO404  Mark = 60
+Module; web development CO456  Mark = 50
+Final Mark =55
+Final Grade=C
+Final Credit=0
+Module module1 = new Module("programming concepts", "CO452");
+module1.getMark()
+    returned int -1
+course1.createModules();
+course1.createModules();
+course1.printModules();
+Modules: 
+Module; programming concepts CO452  Mark = -1
+Module; computer Architectures CO450  Mark = -1
+Module; cyber Threat and risk management CO404  Mark = -1
+Module; web development CO456  Mark = -1
+Course course1 = new Course("CP487", "computing");
+course1.createModules();
+course1.createModules();
+course1.printModules();
+Modules: 
+Module; programming concepts CO452  Mark = -1
+Module; computer Architectures CO450  Mark = -1
+Module; cyber Threat and risk management CO404  Mark = -1
+Module; web development CO456  Mark = -1
+course1.setMarkI(60, 1);
+course1.createModules();
+course1.setMarkI(50, 2);
+course1.setMarkI(70, 3);
+course1.setMarkI(40, 4);
+course1.printModules();
+Modules: 
+Module; programming concepts CO452  Mark = -1
+Module; computer Architectures CO450  Mark = 50
+Module; cyber Threat and risk management CO404  Mark = 70
+Module; web development CO456  Mark = 40
+course1.calculateGrade();
+No mark awardedcourse1.setMarkI(60, 1);
+course1.calculateGrade();
+No mark awardedcourse1.calculateFinalMark();
+courseCP487 - computing
+Modules: 
+Module; programming concepts CO452  Mark = 60
+Module; computer Architectures CO450  Mark = 50
+Module; cyber Threat and risk management CO404  Mark = 70
+Module; web development CO456  Mark = 40
+Final Mark =55
+Final Grade=null
+Final Credit=0
+course1.calculateGrade();
+Module module1 = new Module("Programming concepts", "CO452");
+Module module2 = new Module("Computer archtectures", "CO450");
+Module module3 = new Module("Cyber threat and risk managment", "CO404");
+Module module4 = new Module("web development", "CO456");
+course1.printModules();
+Modules: 
+Module; programming concepts CO452  Mark = 60
+Module; computer Architectures CO450  Mark = 50
+Module; cyber Threat and risk management CO404  Mark = 70
+Module; web development CO456  Mark = 40
+Final Mark =55
+Final Grade=C
+Final Credit=0

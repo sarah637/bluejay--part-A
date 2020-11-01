@@ -1,7 +1,7 @@
 import java.util.*;
 
 /**
- *Module represents the modules in the course.
+ *Module represents modules in the course.
  *
  * @author Sarah Cunningham
  * @version 26/10/2020
@@ -10,30 +10,29 @@ public class Module
 {
     // instance variables - replace the example below with your own
     private int mark;
-   
+
     private String title;
-    
+
     private String codeNo;
-    
+
     private int credit;
-    
+
     private boolean completed;
-    
-    
+
    
     /**
      * Constructor for objects of class module
      */
     public Module(String title, String codeNo) 
-    
+
     {
-      mark = -1;
-      this. title = title;
-      this.codeNo = codeNo;
-      credit = 0;
-      completed = false;
+        mark = -1;
+        this. title = title;
+        this.codeNo = codeNo;
+        credit = 0;
+        completed = false;
     }
-    
+
     /**
      * Get module title
      */
@@ -41,7 +40,7 @@ public class Module
     {
         return title;
     }
-    
+
     /**
      * module code number
      */
@@ -49,23 +48,26 @@ public class Module
     {
         return codeNo;
     }
-    
+
     /**
      * Award a mark
      */
     public void awardMark(int mark)
     {
-      this.mark = mark;
+        this.mark = mark;
     }
-    
+
     /**
      * retrieve a mark
      */
     public int getMark()
     {
-       return mark; 
+        return mark; 
     }
-    
+
+    /**
+     * complete mark in boolean
+     */
     public boolean isComplete()
     {
         if(mark >= 40)
@@ -78,7 +80,7 @@ public class Module
             return false;
         }
     }
-    
+
     /**
      * Retrieve credit
      */
@@ -86,14 +88,14 @@ public class Module
     {
         return credit;
     }
-    
+
     /**
      * print information
      */
     public void print()
     {
-      System.out.println("Module; " + codeNo + 
-         " " + title + " Mark = " + mark);
+        System.out.println("Module; " + codeNo + 
+            " " + title + " Mark = " + mark);
     }  
 }
-    
+

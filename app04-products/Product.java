@@ -1,8 +1,8 @@
 /**
  * Model some details of a product sold by a company.
  * 
- * @author David J. Barnes and Michael Kölling.
- * @version 2016.02.29
+ * @author Sarah Cunningham
+ * @version 06/11/2020
  */
 public class Product
 {
@@ -64,16 +64,18 @@ public class Product
      * @param amount The number of new items added to the stock.
      *               This must be greater than zero.
      */
-    public void increaseQuantity(int amount)
+    public void delivery(int amount)
     {
         if(amount > 0) 
         {
             quantity += amount;
+            system.out.println ("sold" + amount + "of" + name);
         }
-        else 
+        else if (amount > quantity && quantity > 0)
         {
             System.out.println("Attempt to restock " + name +
                                " with a non-positive amount: " + amount);
+             quantity = 0;                  
         }
     }
 
@@ -81,13 +83,19 @@ public class Product
      * Sell one of these products.
      * An error is reported if there appears to be no stock.
      */
-    public void sellOne()
+    public void sellOne(int amount)
     {
-        if(quantity > 0) 
+        if(quantity >= amount) 
         {
-            quantity--;
+            quantity -= amount;
         }
-        else 
+        else if(amount > quantity)
+        {
+            system.out.println("Insufficient stock = " + quantity 
+            + amount ordered = " + amount")
+            
+        }
+        else
         {
             System.out.println(
                 "Attempt to sell an out of stock item: " + name);

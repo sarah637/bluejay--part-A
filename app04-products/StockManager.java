@@ -9,6 +9,7 @@ import java.util.ArrayList;
  */
 public class StockManager
 {
+    
     // A list of the products.
     private ArrayList<Product> stock;
 
@@ -28,44 +29,56 @@ public class StockManager
     {
         stock.add(item);
     }
-    
+
     /**
      * Receive a delivery of a particular product.
      * Increase the quantity of the product by the given amount.
      * @param id The ID of the product.
      * @param amount The amount to increase the quantity by.
      */
-    public void delivery(int id, int amount)
-    if(Product! = null)
+    public void deliveryproduct(int id, int amount)
     {
-      Product produt = findProduct(id);
-      Product.increaseQuantity(amount);
-      System.out.println("Product Delivered : " + product);
-      
+       Product product = findProduct(id); 
+        if(Product != null)
+       product.deliver(amount);
+       else
+            System.out.println("Product ID" + id + "NOT FOUND!!!");
+    }
+    
+    {
+        Product produt = findProduct(id);
+        Product.increaseQuantity(amount);
+        System.out.println("Product Delivered : " + product);
+       
     }
     else
     {
+
         
-        System.out.println("Product ID" + id + "NOT FOUND!!!");
     }
-    
+
     /**
      * Sell one of the given item.
      * Show the before and after status of the product.
      * @param id The ID of the product being sold.
      */
-    public void sellProduct(int id)
+    public void sellProduct(int id, int quantity)
     {
         Product product = getProduct(id);
-        
+
         if(product != null) 
         {
             printDetails(id);
-            product.sellOne();
-            showDetails(id);
+            
+            for (intcount = 0; count <= quantity; count++)
+            {
+               product.sellOne();  
+            }
+            
+            printProducts(id);
         }
     }
-    
+
     /**
      * Try to find a product in the stock with the given id.
      * @return The identified product, or null if there is none
@@ -75,23 +88,22 @@ public class StockManager
     {
         for(Product product : stock)
         {
-          if (Product.getID() == id)
-        
+            if (Product.getID() == id)
+
+                }
+
+            return null;
         }
-      
-       
-        return null;
-    }
-    
-    /**
-     * Locate a product with the given ID, and return how
-     * many of this item are in stock. If the ID does not
-     * match any product, return zero.
-     * @param id The ID of the product.
-     * @return The quantity of the given product in stock.
-     */
-    public int numberInStock(int id)
-    {
+
+        /**
+         * Locate a product with the given ID, and return how
+         * many of this item are in stock. If the ID does not
+         * match any product, return zero.
+         * @param id The ID of the product.
+         * @return The quantity of the given product in stock.
+         */
+        public int numberInStock(int id)
+     {
         return 0;
     }
 
@@ -102,9 +114,14 @@ public class StockManager
     {
         for(Product product :stock)
         {
-           product.print
-           System.out.println(product)
-            
+            System.out.println(product)
+
         }
+    }
+    
+    public void printHeading()
+    {
+        System.out.print (/n"==========================");
+        System . out print
     }
 }

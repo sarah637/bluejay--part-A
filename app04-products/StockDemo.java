@@ -1,3 +1,4 @@
+import java.util.Random;
 /**
  * Demonstrate the StockManager and Product classes.
  * The demonstration becomes properly functional as
@@ -8,75 +9,88 @@
  */
 public class StockDemo
 {
+    public static final int First_ID = 101;
+    
     // The stock manager.
     private StockManager manager;
+    
+    private Random randomgenerator;
+    
+    private String name = "Dolce Gusto";
 
     /**
      * Create a StockManager and populate it with a few
      * sample products.
      */
     public StockDemo(stockManager manager)
-    {
+    
+    {if(name.startsWith("Dolcegusto"))
+     {
+        
+     }
+        
+        generator = new Random();
         this. manager = manger;
         
-        manager.addProduct(new Product(132, "Clock Radio"));
-        manager.addProduct(new Product(37,  "Mobile Phone"));
-        manager.addProduct(new Product(23,  "Microwave Oven"));
+        int id = FIRST_ID;
+        
+        manager.addProduct(new Product(101, "Dolce Gusto Latta"));
+        manager.addProduct(new Product(102, "Dolce Gusto Cappaccino"));
+        manager.addProduct(new Product(103, "Dolce Gusto Mocha"));
+        manager.addProduct(new Product(104, "Nespresso pods Latta"));
+        manager.addProduct(new Product(105, "Nespresso pods Cappaccino"));
+        manager.addProduct(new Product(106, "Nespresso pods Mocha"));
+        manager.addProduct(new Product(107, "Tassimo Pods Latta"));
+        manager.addProduct(new Product(108, "Tassimo Pods Cappaccino"));
+        manager.addProduct(new Product(109, "Tassimo Pods Mocha"));
+        manager.addProduct(new Product(110, "Tassimo Pods Americano"));
     }
     
     /**
-     * Provide a very simple demonstration of how a StockManager
+     * This method will run all tests to show the requirements are meet
+     */
+    public void runDemo()
+    {
+       manager.printAllProducts();
+       demoDeliverProducts();
+       manager.printAllProducts();
+       demoSellproducts();
+       manager.printAllProducts();
+    }
+    
+   /**
+    *Provide a very simple demonstration of how a StockManager
      * might be used. Details of one product are shown, the
-     * product is restocked, and then the details are shown again.
-     */
-    public void demoDelivery()
-    {
-        // Show details of all of the products.
-        manager.printProductDetails();
-        // Take delivery of 5 items of one of the products.
-        manager.delivery(132, 5);
-        
-        manager.printAllProduct();
-    }
+     * product is restocked, and then the details are shown again.   
+    */
     
-    /**
-     * Show details of the given product. If found,
-     * its name and stock quantity will be shown.
-     * @param id The ID of the product to look for.
-     */
-    public void showDetails(int id)
+    private void demoDeliverProducts()
     {
-        Product product = getProduct(id);
+        int quantity = 0;
+        System.out.println();
+        System.out.println ("Demonstrating Product Delivery");
+        Ststem.out.println();
         
-        if(product != null) 
-        {
-            System.out.println(product.toString());
-        }
+       
+       int amount = 0;
+        
+       for(int id = 101; id <= 110; id++)
+     {  
+      quantity = randomgenerator. nextInt(6) + 1;
+       manager.deliveryProduct(id, quantity);
+       amount++;
+     }
+     
+     private void demoSell()
+     {
+         printHeading();
+         
+         
+         int amount = 0
+     
+     
+         
+        
     }
+}  
     
-    /**
-     * Get the product with the given id from the manager.
-     * An error message is printed if there is no match.
-     * @param id The ID of the product.
-     * @return The Product, or null if no matching one is found.
-     */
-    public Product getProduct(int id)
-    {
-        Product product = manager.findProduct(id);
-        
-        if(product == null) 
-        {
-            System.out.println("Product with ID: " + id +
-                               " is not recognised.");
-        }
-        return product;
-    }
-
-    /**
-     * @return The stock manager.
-     */
-    public StockManager getManager()
-    {
-        return manager;
-    }
-}

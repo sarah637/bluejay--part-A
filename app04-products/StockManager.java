@@ -38,24 +38,26 @@ public class StockManager
      */
     public void deliveryproduct(int id, int amount)
     {
-       Product product = findProduct(id); 
-        if(Product != null)
-       product.deliver(amount);
-       else
-            System.out.println("Product ID" + id + "NOT FOUND!!!");
+       Product product = manager. findProduct(id); 
+       
+       if(Product != null)
+       {  
+           System.out.println("Product ID" + id + "NOT FOUND!!!");
+       } 
+        
     }
     
+    /**
+     * 
+     */
+    public void something()
     {
         Product produt = findProduct(id);
         Product.increaseQuantity(amount);
         System.out.println("Product Delivered : " + product);
        
     }
-    else
-    {
 
-        
-    }
 
     /**
      * Sell one of the given item.
@@ -64,18 +66,13 @@ public class StockManager
      */
     public void sellProduct(int id, int quantity)
     {
-        Product product = getProduct(id);
+        Product product = findProduct(id);
 
         if(product != null) 
         {
-            printDetails(id);
-            
-            for (intcount = 0; count <= quantity; count++)
-            {
-               product.sellOne();  
-            }
-            
-            printProducts(id);
+            printProduct(id);
+            product.sellOne();
+            printProduct(id);
         }
     }
 
@@ -88,13 +85,11 @@ public class StockManager
     {
         for(Product product : stock)
         {
-            if (Product.getID() == id)
-
-                }
-
-            return null;
+            if (product.getID() == id)
+                return null;
         }
-
+    }
+    
         /**
          * Locate a product with the given ID, and return how
          * many of this item are in stock. If the ID does not
@@ -114,14 +109,14 @@ public class StockManager
     {
         for(Product product :stock)
         {
-            System.out.println(product)
+            System.out.println(product);
 
         }
     }
     
     public void printHeading()
     {
-        System.out.print (/n"==========================");
-        System . out print
+        System.out.println("\n==========================");
+        System.out.println();
     }
 }

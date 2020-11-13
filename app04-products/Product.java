@@ -1,3 +1,5 @@
+
+
 /**
  * Model some details of a product sold by a company.
  * 
@@ -69,13 +71,13 @@ public class Product
         if(amount > 0) 
         {
             quantity += amount;
-            system.out.println ("sold" + amount + "of" + name);
+            System.out.println ("sold" + amount + "of" + name);
         }
         else if (amount > quantity && quantity > 0)
         {
             System.out.println("Attempt to restock " + name +
-                               " with a non-positive amount: " + amount);
-             quantity = 0;                  
+                " with a non-positive amount: " + amount);
+            quantity = 0;                  
         }
     }
 
@@ -91,9 +93,9 @@ public class Product
         }
         else if(amount > quantity)
         {
-            system.out.println("Insufficient stock = " + quantity 
-            + amount ordered = " + amount")
-            
+            System.out.println("Insufficient stock = " + quantity +
+               " order amount = " + amount); 
+
         }
         else
         {

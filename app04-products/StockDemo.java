@@ -41,10 +41,11 @@ public class StockDemo
      */
     public void runDemo()
     {
-        manager.printAllProducts();
-        demoDeliverProducts();
-        //demoSellPoducts();
-
+       manager.printAllProducts();
+       demoDeliverProducts();
+       manager.printALLProducts();
+       demosellProduct();
+       mamnager.printALLProducts();
     }
 
     /**
@@ -56,12 +57,12 @@ public class StockDemo
     private void demoDeliverProducts()
     {
         printHeading("delivery");
-        int amount = 0;
+        int quantity = 0;
 
         for(int id = 101; id <= 110; id++)
         {  
             amount = generator.nextInt(8) + 1;
-            //manager.deliveryProduct(id, amount);
+            manager.deliveryProduct(id, quantity);
             amount++;
         }
     }

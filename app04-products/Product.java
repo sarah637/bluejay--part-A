@@ -1,5 +1,4 @@
 
-
 /**
  * Model some details of a product sold by a company.
  * 
@@ -15,6 +14,8 @@ public class Product
     // The quantity of this product in stock.
     private int quantity;
 
+    private int lowStock;
+
     /**
      * Constructor for objects of class Product.
      * The initial stock quantity is zero.
@@ -26,6 +27,7 @@ public class Product
         this.id = id;
         this.name = name;
         quantity = 0;
+        lowStock = 3;
     }
 
     /**
@@ -52,6 +54,16 @@ public class Product
         return quantity;
     }
 
+    /**
+     * Set a new namefor a product based on ID number.
+     */
+    public void changeName(int ID, String replacementName)
+
+    {
+        name = replacementName;
+        
+    }
+       
     /**
      * @return The id, name and quantity in stock.
      */
@@ -85,16 +97,16 @@ public class Product
      * Sell one of these products.
      * An error is reported if there appears to be no stock.
      */
-    public void sellOne(int amount)
+    public void sell(int amount)
     {
         if(quantity >= amount) 
         {
             quantity -= amount;
         }
-        else if(amount > quantity)
+        else if(amount < quantity)
         {
             System.out.println("Insufficient stock = " + quantity +
-               " order amount = " + amount); 
+                " order amount = " + (amount - quantity)); 
 
         }
         else

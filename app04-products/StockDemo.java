@@ -1,3 +1,7 @@
+
+
+import java.util.*;
+import java.util.*;
 import java.util.Random;
 /**
  * Demonstrate the StockManager and Product classes.
@@ -42,10 +46,9 @@ public class StockDemo
     public void runDemo()
     {
        manager.printAllProducts();
+       
        demoDeliverProducts();
-       manager.printALLProducts();
-       demosellProduct();
-       mamnager.printALLProducts();
+       demoSell();
     }
 
     /**
@@ -57,19 +60,23 @@ public class StockDemo
     private void demoDeliverProducts()
     {
         printHeading("delivery");
-        int quantity = 0;
+        int amount = 0;
 
         for(int id = 101; id <= 110; id++)
         {  
             amount = generator.nextInt(8) + 1;
-            manager.deliveryProduct(id, quantity);
-            amount++;
+            manager.deliverProduct(id, amount);
+            amount ++;
         }
     }
 
+   /**
+    * Provide a simple demonstration of how selling
+    * products decrease the stock.
+    */
     private void demoSell()
     {
-        printHeading("something");
+        printHeading("Sell Product");
 
         int amount = 0;
         for(int id = 101; id <= 110; id++)
@@ -86,8 +93,8 @@ public class StockDemo
      */
     public void search(String prefix)
     {
-        int id = 100;
-
+        int id = 100; 
+        
         while(id <= 109)
         {
             Product product = manager.findProduct(id);

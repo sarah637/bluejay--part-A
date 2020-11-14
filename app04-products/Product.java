@@ -73,26 +73,24 @@ public class Product
     }
 
     /**
-     * Restock with the given amount of this product.
+     * Restock with given amount of product.
      * The current quantity is incremented by the given amount.
      * @param amount The number of new items added to the stock.
      *               This must be greater than zero.
      */
-    public void delivery(int amount)
+    public void increaseQuantity(int amount)
     {
-        if(amount > 0) 
+        if (amount > 0)
         {
             quantity += amount;
-            System.out.println ("sold" + amount + "of" + name);
         }
-        else if (amount > quantity && quantity > 0)
+        else
         {
-            System.out.println("Attempt to restock " + name +
-                " with a non-positive amount: " + amount);
-            quantity = 0;                  
+            System.out.println("Attempt to restock" + name +
+                               "with a non-positive amount;" + amount);
         }
     }
-
+    
     /**
      * Sell one of these products.
      * An error is reported if there appears to be no stock.
@@ -102,12 +100,13 @@ public class Product
         if(quantity >= amount) 
         {
             quantity -= amount;
+            System.out.println("Sold" + amount + "of" + name);
         }
-        else if(amount < quantity)
+        else if(amount > quantity && quantity>0)
         {
             System.out.println("Insufficient stock = " + quantity +
-                " order amount = " + (amount - quantity)); 
-
+                " order amount = " + amount); 
+            quantity = 0;   
         }
         else
         {

@@ -1,0 +1,127 @@
+StockManager stock = new StockManager();
+StockDemo demo = new StockDemo(stock);
+stock.printHeading();
+
+==========================
+Sarah's Stock List
+#############
+
+stock.printAllProducts();
+101: Dolce Gusto Latta stock level: 0
+102: Dolce Gusto Cappaccino stock level: 0
+103: Dolce Gusto Mocha stock level: 0
+104: Nespresso pods Latta stock level: 0
+105: Nespresso pods Cappaccino stock level: 0
+106: Nespresso pods Mocha stock level: 0
+107: Tassimo Pods Latta stock level: 0
+108: Tassimo Pods Cappaccino stock level: 0
+109: Tassimo Pods Mocha stock level: 0
+110: Tassimo Pods Americano stock level: 0
+stock.deliverProduct(101, 6);
+Product Delivered:101: Dolce Gusto Latta stock level: 6
+stock.deliverProduct(102, 8);
+Product Delivered:102: Dolce Gusto Cappaccino stock level: 8
+stock.deliverProduct(103, 5);
+Product Delivered:103: Dolce Gusto Mocha stock level: 5
+stock.deliverProduct(104, 6);
+Product Delivered:104: Nespresso pods Latta stock level: 6
+stock.deliverProduct(105, 4);
+Product Delivered:105: Nespresso pods Cappaccino stock level: 4
+stock.deliverProduct(106, 8);
+Product Delivered:106: Nespresso pods Mocha stock level: 8
+stock.deliverProduct(107, 4);
+Product Delivered:107: Tassimo Pods Latta stock level: 4
+stock.deliverProduct(108, 10);
+Product Delivered:108: Tassimo Pods Cappaccino stock level: 10
+stock.deliverProduct(109, 9);
+Product Delivered:109: Tassimo Pods Mocha stock level: 9
+stock.deliverProduct(110, 5);
+Product Delivered:110: Tassimo Pods Americano stock level: 5
+stock.sellProduct(101, 2);
+101: Dolce Gusto Latta stock level: 6
+Sold2ofDolce Gusto Latta
+101: Dolce Gusto Latta stock level: 4
+stock.sellProduct(102, 5);
+102: Dolce Gusto Cappaccino stock level: 8
+Sold5ofDolce Gusto Cappaccino
+102: Dolce Gusto Cappaccino stock level: 3
+stock.sellProduct(103, 4);
+103: Dolce Gusto Mocha stock level: 5
+Sold4ofDolce Gusto Mocha
+103: Dolce Gusto Mocha stock level: 1
+stock.sellProduct(104, 1);
+104: Nespresso pods Latta stock level: 6
+Sold1ofNespresso pods Latta
+104: Nespresso pods Latta stock level: 5
+stock.sellProduct(105, 4);
+105: Nespresso pods Cappaccino stock level: 4
+Sold4ofNespresso pods Cappaccino
+105: Nespresso pods Cappaccino stock level: 0
+stock.sellProduct(106, 3);
+106: Nespresso pods Mocha stock level: 8
+Sold3ofNespresso pods Mocha
+106: Nespresso pods Mocha stock level: 5
+stock.sellProduct(107, 6);
+107: Tassimo Pods Latta stock level: 4
+Insufficient stock = 4 order amount = 6
+107: Tassimo Pods Latta stock level: 0
+stock.sellProduct(108, 8);
+108: Tassimo Pods Cappaccino stock level: 10
+Sold8ofTassimo Pods Cappaccino
+108: Tassimo Pods Cappaccino stock level: 2
+stock.sellProduct(109, 2);
+109: Tassimo Pods Mocha stock level: 9
+Sold2ofTassimo Pods Mocha
+109: Tassimo Pods Mocha stock level: 7
+stock.sellProduct(110, 3);
+110: Tassimo Pods Americano stock level: 5
+Sold3ofTassimo Pods Americano
+110: Tassimo Pods Americano stock level: 2
+stock.renameproduct(110, "Tassimo pods Flat White");
+Rename Change Successful110: Tassimo pods Flat White stock level: 2
+stock.printAllProducts();
+101: Dolce Gusto Latta stock level: 4
+102: Dolce Gusto Cappaccino stock level: 3
+103: Dolce Gusto Mocha stock level: 1
+104: Nespresso pods Latta stock level: 5
+105: Nespresso pods Cappaccino stock level: 0
+106: Nespresso pods Mocha stock level: 5
+107: Tassimo Pods Latta stock level: 0
+108: Tassimo Pods Cappaccino stock level: 2
+109: Tassimo Pods Mocha stock level: 7
+110: Tassimo pods Flat White stock level: 2
+stock.removeProduct(106);
+stock.printAllProducts();
+101: Dolce Gusto Latta stock level: 4
+102: Dolce Gusto Cappaccino stock level: 3
+103: Dolce Gusto Mocha stock level: 1
+104: Nespresso pods Latta stock level: 5
+105: Nespresso pods Cappaccino stock level: 0
+107: Tassimo Pods Latta stock level: 0
+108: Tassimo Pods Cappaccino stock level: 2
+109: Tassimo Pods Mocha stock level: 7
+110: Tassimo pods Flat White stock level: 2
+demo.search("Latta");
+    Exception occurred.
+StockManager stockManager = new StockManager();
+StockDemo demo = new StockDemo(stockManager);
+demo.search("Latta");
+    Exception occurred.
+StockManager stockManager = new StockManager();
+StockDemo demo = new StockDemo(stockManager);
+demo.search("Latta");
+    Exception occurred.
+demo.search("Latta");
+    Exception occurred.
+StockManager stockManager = new StockManager();
+StockDemo demo = new StockDemo(stockManager);
+demo.search("Latta");
+    Exception occurred.
+demo.search("Mocha");
+    Exception occurred.
+demo.search("latta");
+    Exception occurred.
+StockManager manager = new StockManager();
+StockDemo demo = new StockDemo(manager);
+demo.search("latta");
+    Exception occurred.

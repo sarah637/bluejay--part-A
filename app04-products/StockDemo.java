@@ -1,6 +1,3 @@
-
-
-import java.util.*;
 import java.util.*;
 import java.util.Random;
 /**
@@ -93,12 +90,12 @@ public class StockDemo
      */
     public void search(String prefix)
     {
-        int id = 100; 
+        int id = 101; 
         
-        while(id <= 109)
+        while(id <= 110)
         {
             Product product = manager.findProduct(id);
-            String name = product. getName();
+            String name = product.getName();
             name = name.toLowerCase();
             prefix = prefix.toLowerCase();
 

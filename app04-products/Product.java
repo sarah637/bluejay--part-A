@@ -80,7 +80,7 @@ public class Product
      */
     public void increaseQuantity(int amount)
     {
-        if (amount > 0)
+        if(amount > 0)
         {
             quantity += amount;
         }
@@ -102,7 +102,7 @@ public class Product
             quantity -= amount;
             System.out.println("Sold" + amount + "of" + name);
         }
-        else if(amount > quantity && quantity>0)
+        else if(amount > quantity && quantity > 0)
         {
             System.out.println("Insufficient stock = " + quantity +
                 " order amount = " + amount); 

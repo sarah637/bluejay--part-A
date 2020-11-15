@@ -183,6 +183,9 @@ public class StockManager
         }
     }
 
+    /**
+     * print heading for testing.
+     */
     public void printHeading()
     {
         System.out.println("\n==========================");

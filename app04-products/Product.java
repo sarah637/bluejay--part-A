@@ -14,8 +14,6 @@ public class Product
     // The quantity of this product in stock.
     private int quantity;
 
-    private int lowStock;
-
     /**
      * Constructor for objects of class Product.
      * The initial stock quantity is zero.
@@ -27,7 +25,6 @@ public class Product
         this.id = id;
         this.name = name;
         quantity = 0;
-        lowStock = 3;
     }
 
     /**

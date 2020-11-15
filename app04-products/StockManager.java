@@ -55,7 +55,6 @@ public class StockManager
         Product product = findProduct(id);
         if (product != null)
         {
-
             product.changeName(id, replaceProductName);
             System.out.println("Rename Change Successful"
                 + product);

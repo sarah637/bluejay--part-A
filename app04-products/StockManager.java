@@ -173,7 +173,7 @@ public class StockManager
     {
         for(Product product : stock)
          {
-             int id = 100;
+             int id = 101;
             if(product.getQuantity() <3)
             {   
                 System.out.println("Alert! Low Stock");

@@ -23,7 +23,7 @@ public class StockDemo
 
     {  
         generator = new Random();
-        this.manager = new StockManager();
+        this.manager = manager;
 
         manager.addProduct(new Product(101, "Dolce Gusto Latta"));
         manager.addProduct(new Product(102, "Dolce Gusto Cappaccino"));
@@ -46,6 +46,7 @@ public class StockDemo
        
        demoDeliverProducts();
        demoSell();
+       search("Latta");
     }
 
     /**

@@ -1,0 +1,106 @@
+StockManager manager = new StockManager();
+StockDemo demo = new StockDemo(manager);
+demo.search("Latta");
+
+Searchingfor products containinglatta
+
+
+Searchingfor products containinglatta
+
+
+Searchingfor products containinglatta
+
+demo.search("Cappaccino");
+
+Searchingfor products containingcappaccino
+
+
+Searchingfor products containingcappaccino
+
+
+Searchingfor products containingcappaccino
+
+manager.printAllProducts();
+101: Dolce Gusto Latta stock level: 0
+102: Dolce Gusto Cappaccino stock level: 0
+103: Dolce Gusto Mocha stock level: 0
+104: Nespresso pods Latta stock level: 0
+105: Nespresso pods Cappaccino stock level: 0
+106: Nespresso pods Mocha stock level: 0
+107: Tassimo Pods Latta stock level: 0
+108: Tassimo Pods Cappaccino stock level: 0
+109: Tassimo Pods Mocha stock level: 0
+110: Tassimo Pods Americano stock level: 0
+manager.printlowStock();
+Alert! Low Stock
+101: Dolce Gusto Latta stock level: 0
+Alert! Low Stock
+102: Dolce Gusto Cappaccino stock level: 0
+Alert! Low Stock
+103: Dolce Gusto Mocha stock level: 0
+Alert! Low Stock
+104: Nespresso pods Latta stock level: 0
+Alert! Low Stock
+105: Nespresso pods Cappaccino stock level: 0
+Alert! Low Stock
+106: Nespresso pods Mocha stock level: 0
+Alert! Low Stock
+107: Tassimo Pods Latta stock level: 0
+Alert! Low Stock
+108: Tassimo Pods Cappaccino stock level: 0
+Alert! Low Stock
+109: Tassimo Pods Mocha stock level: 0
+Alert! Low Stock
+110: Tassimo Pods Americano stock level: 0
+Product product = new Product(101, "Latta");
+product.getName()
+    returned String "Latta"
+demo.search("Latta");
+
+Searchingfor products containinglatta
+
+
+Searchingfor products containinglatta
+
+
+Searchingfor products containinglatta
+
+StockManager manager = new StockManager();
+StockDemo demo = new StockDemo(manager);
+demo.search("Latta");
+product
+product
+product
+StockManager manager = new StockManager();
+StockDemo demo = new StockDemo(manager);
+demo.search("Latta");
+101: Dolce Gusto Latta stock level: 0
+104: Nespresso pods Latta stock level: 0
+107: Tassimo Pods Latta stock level: 0
+demo.search("Mocha");
+103: Dolce Gusto Mocha stock level: 0
+106: Nespresso pods Mocha stock level: 0
+109: Tassimo Pods Mocha stock level: 0
+manager.printlowStock();
+Alert! Low Stock
+101: Dolce Gusto Latta stock level: 0
+Alert! Low Stock
+102: Dolce Gusto Cappaccino stock level: 0
+Alert! Low Stock
+103: Dolce Gusto Mocha stock level: 0
+Alert! Low Stock
+104: Nespresso pods Latta stock level: 0
+Alert! Low Stock
+105: Nespresso pods Cappaccino stock level: 0
+Alert! Low Stock
+106: Nespresso pods Mocha stock level: 0
+Alert! Low Stock
+107: Tassimo Pods Latta stock level: 0
+Alert! Low Stock
+108: Tassimo Pods Cappaccino stock level: 0
+Alert! Low Stock
+109: Tassimo Pods Mocha stock level: 0
+Alert! Low Stock
+110: Tassimo Pods Americano stock level: 0
+manager.numberInStock(104)
+    returned int 0

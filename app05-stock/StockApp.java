@@ -1,4 +1,3 @@
-import java.util;
 /**
  * This app provides a user interface to the
  * stock manager so that users can add, edit,
@@ -11,15 +10,22 @@ public class StockApp
 {
     public static final char CLEAR_CODE = '\u000c';
 
-    public static final String Quit = "quit";
+    public static final String QUIT = "QUIT";
     public static final String ADD =  "ADD";
-    public ststic final String PRINTALL =  "PRINTALL";
+    public static final String PRINT_ALL =  "PRINTALL";
+    
     // Use to get user input
-    private InputReader input;
+    private InputReader input = new InputReader();
 
     private StockManager manager = new StockManager();
+    private StockDemo demo;
+    
+    public StockApp()
+    {
+        demo =  new StockDemo(manager);
 
-      
+    }
+    
     /**
      * menu choices
      */
@@ -32,8 +38,9 @@ public class StockApp
             printHeading();
             printMenuChoices();
 
-            String choice = input.getInput();
-
+            String choice = input.getString(" Please enter your choice > ");
+            choice = choice.toUpperCase();
+            
             if(choice.equals(QUIT))
                 finished = true;
             else
@@ -41,16 +48,22 @@ public class StockApp
         }
     }
 
-    private void execute Menu(); Choice(String choice)
+    /**
+     * 
+     */
+    private void executeMenuChoice(String choice)
     { 
         if(choice.equals(ADD))
         {
             addProduct();
         }
-        else if (choice.equales(PRINT_ALL))
+        else if (choice.equals(PRINT_ALL))
         {
-            manager.printAllproducts();
-            String value = input.getString();
+            manager.printAllProducts();
+        }
+        else
+        {
+            System.out.println(" Not a valid choice!");
         }
     }
 
@@ -58,18 +71,22 @@ public class StockApp
     {
         System.out.println ("Adding new product\n"); 
 
-        System.out.println("please enter the product ID");
-        String value = input.getString();
-        int id = Integer.parseInt(value);
+        int id = input.getInt("\n Please enter the product ID");
 
-        System.out.println("Please enter the name of the product");
-        String name = input. getString();
+        if(manager.findProduct(id) == null)
+        {
+            String name = input.getString("\n Please enter the name of the product");
 
-        Product product = new Product(id.name);
-        manager.addProduct(product);
-
-        System.out.println("\nyou have added" + product);
-        System.out.print;
+            Product product = new Product(id, name);
+            manager.addProduct(product);
+    
+            System.out.println("\n You have added " + product);
+            System.out.println();
+        }
+        else
+        {
+            System.out.println("\n Product ID " + id + " already exists");
+        }
     }
 
     /**

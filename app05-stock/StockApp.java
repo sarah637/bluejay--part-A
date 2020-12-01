@@ -8,21 +8,25 @@
  */
 public class StockApp
 {
+     // Use to get user input
+    private InputReader input = new InputReader();
+
     public static final char CLEAR_CODE = '\u000c';
 
     public static final String QUIT = "QUIT";
     public static final String ADD =  "ADD";
     public static final String PRINT_ALL =  "PRINTALL";
     
-    // Use to get user input
-    private InputReader input = new InputReader();
-
+   
     private StockManager manager = new StockManager();
     private StockDemo demo;
     
+    /**
+     * Constructor for objects of class StockApp
+     */
     public StockApp()
     {
-        demo =  new StockDemo(manager);
+        input = new InputReader();
 
     }
     
@@ -67,6 +71,9 @@ public class StockApp
         }
     }
 
+    /**
+     * Print the title of the progress of coffee brands.
+     */
     public void addProduct()
     {
         System.out.println ("Adding new product\n"); 
@@ -109,7 +116,7 @@ public class StockApp
     {
         System.out.println("******************************");
         System.out.println(" Stock Management Application ");
-        System.out.println("    App05: by Sarah");
+        System.out.println("    App05: by Sarah Cunningham");
         System.out.println("******************************");
     }
 }

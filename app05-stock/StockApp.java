@@ -8,7 +8,9 @@
  */
 public class StockApp
 {
-     // Use to get user input
+    public final int FIRST_ID = 101;
+    
+    // Use to get user input
     private InputReader input = new InputReader();
 
     public static final char CLEAR_CODE = '\u000c';
@@ -21,13 +23,14 @@ public class StockApp
     private StockManager manager = new StockManager();
     private StockDemo demo;
     
+    
     /**
      * Constructor for objects of class StockApp
      */
     public StockApp()
     {
         input = new InputReader();
-
+        manager = new StockManager();
     }
     
     /**
@@ -70,6 +73,7 @@ public class StockApp
             System.out.println(" Not a valid choice!");
         }
     }
+    
 
     /**
      * Print the title of the progress of coffee brands.
@@ -108,7 +112,7 @@ public class StockApp
         System.out.println("    Quit:       Quit the program");
         System.out.println();        
     }
-
+    
     /**
      * Print the title of the program and the authors name
      */

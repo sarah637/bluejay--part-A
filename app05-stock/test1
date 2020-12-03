@@ -1,0 +1,200 @@
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+ Please enter your choice > 
+101
+ Not a valid choice!
+******************************
+ Stock Management Application 
+    App05: by Sarah Cunningham
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+ Please enter your choice > 
+printAll
+
+ Print out low stock!
+
+101: Dolce stock level: 0
+111: Nespresso stock level: 0
+100: chocolate stock level: 0
+
+******************************
+ Stock Management Application 
+    App05: by Sarah Cunningham
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+ Please enter your choice > 
+add
+Adding new product
+
+
+ Please enter the product ID
+101
+
+ Product ID 101 already exists
+******************************
+ Stock Management Application 
+    App05: by Sarah Cunningham
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+ Please enter your choice > 
+printAll
+
+ Print out low stock!
+
+101: Dolce stock level: 0
+111: Nespresso stock level: 0
+100: chocolate stock level: 0
+
+******************************
+ Stock Management Application 
+    App05: by Sarah Cunningham
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+ Please enter your choice > 
+Add
+Adding new product
+
+
+ Please enter the product ID
+101 Dolce Gusto Latta
+
+ Product ID 101 already exists
+******************************
+ Stock Management Application 
+    App05: by Sarah Cunningham
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+ Please enter your choice > 
+ Not a valid choice!
+******************************
+ Stock Management Application 
+    App05: by Sarah Cunningham
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+ Please enter your choice > 
+ Not a valid choice!
+******************************
+ Stock Management Application 
+    App05: by Sarah Cunningham
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+ Please enter your choice > 
+ Not a valid choice!
+******************************
+ Stock Management Application 
+    App05: by Sarah Cunningham
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+ Please enter your choice > 
+printAll
+
+ Print out low stock!
+
+101: Dolce stock level: 0
+111: Nespresso stock level: 0
+100: chocolate stock level: 0
+
+******************************
+ Stock Management Application 
+    App05: by Sarah Cunningham
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+ Please enter your choice > 
+add
+Adding new product
+
+
+ Please enter the product ID
+110
+
+ Please enter the name of the product
+printAll
+
+ You have added 110: printAll stock level: 0
+
+******************************
+ Stock Management Application 
+    App05: by Sarah Cunningham
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+ Please enter your choice > 
+printall
+
+ Print out low stock!
+
+101: Dolce stock level: 0
+111: Nespresso stock level: 0
+100: chocolate stock level: 0
+110: printAll stock level: 0
+
+******************************
+ Stock Management Application 
+    App05: by Sarah Cunningham
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+ Please enter your choice > 
+add
+Adding new product
+
+
+ Please enter the product ID
+newname
+    Exception occurred.

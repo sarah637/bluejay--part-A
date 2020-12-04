@@ -16,11 +16,11 @@ public class StockApp
     public static final String QUIT = "QUIT";
     public static final String ADD =  "ADD";
     public static final String PRINT_ALL =  "PRINTALL";
-    public static final String REMOVE = "REMOVE A PRODUCT";
-    public static final String DELIVER = "DELIVER A PRODUCT";
-    public static final String SELL = "SELL A PRODUCT";
-    public static final String SEARCH = "SEARCH FOR A PRODUCT";
-    public static final String LOW_STOCK = "PRINT LOW STOCK";
+    public static final String REMOVE = "REMOVE";
+    public static final String DELIVER = "DELIVER";
+    public static final String SELL = "SELL";
+    public static final String SEARCH = "SEARCH";
+    public static final String LOW_STOCK = "LOW STOCK";
     public static final String RESTOCK = "RESTOCK";
    
    

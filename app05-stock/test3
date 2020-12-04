@@ -1,0 +1,199 @@
+    Deliver:    Deliver a product
+    Sell:       Sell a product
+    Low_Stock   Print low_stock
+    Search      Search for a product
+    Restock     Restock products
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+ Please enter your choice > 
+    VM terminated.
+Program.main();
+******************************
+ Stock Management Application 
+    App05: by Sarah Cunningham
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Deliver:    Deliver a product
+    Sell:       Sell a product
+    Low_Stock   Print low_stock
+    Search      Search for a product
+    Restock     Restock products
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+ Please enter your choice > 
+printAll
+101: Dolce Gusto Latta stock level: 0
+102: Dolce Gusto Cappaccino stock level: 0
+103: Dolce Gusto Mocha stock level: 0
+104: Nespresso pods Latta stock level: 0
+105: Nespresso pods Cappaccino stock level: 0
+106: Nespresso pods Mocha stock level: 0
+107: Tassimo Pods Latta stock level: 0
+108: Tassimo Pods Cappaccino stock level: 0
+109: Tassimo Pods Mocha stock level: 0
+110: Tassimo Pods Americano stock level: 0
+******************************
+ Stock Management Application 
+    App05: by Sarah Cunningham
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Deliver:    Deliver a product
+    Sell:       Sell a product
+    Low_Stock   Print low_stock
+    Search      Search for a product
+    Restock     Restock products
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+ Please enter your choice > 
+search
+search product
+prefix
+******************************
+ Stock Management Application 
+    App05: by Sarah Cunningham
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Deliver:    Deliver a product
+    Sell:       Sell a product
+    Low_Stock   Print low_stock
+    Search      Search for a product
+    Restock     Restock products
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+ Please enter your choice > 
+104
+ Not a valid choice!
+******************************
+ Stock Management Application 
+    App05: by Sarah Cunningham
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Deliver:    Deliver a product
+    Sell:       Sell a product
+    Low_Stock   Print low_stock
+    Search      Search for a product
+    Restock     Restock products
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+ Please enter your choice > 
+search
+search product
+prefix
+******************************
+ Stock Management Application 
+    App05: by Sarah Cunningham
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Deliver:    Deliver a product
+    Sell:       Sell a product
+    Low_Stock   Print low_stock
+    Search      Search for a product
+    Restock     Restock products
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+ Please enter your choice > 
+Dolce Guusto Latta
+ Not a valid choice!
+******************************
+ Stock Management Application 
+    App05: by Sarah Cunningham
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Deliver:    Deliver a product
+    Sell:       Sell a product
+    Low_Stock   Print low_stock
+    Search      Search for a product
+    Restock     Restock products
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+ Please enter your choice > 
+restock
+******************************
+ Stock Management Application 
+    App05: by Sarah Cunningham
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Deliver:    Deliver a product
+    Sell:       Sell a product
+    Low_Stock   Print low_stock
+    Search      Search for a product
+    Restock     Restock products
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+ Please enter your choice > 
+109
+ Not a valid choice!
+******************************
+ Stock Management Application 
+    App05: by Sarah Cunningham
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Deliver:    Deliver a product
+    Sell:       Sell a product
+    Low_Stock   Print low_stock
+    Search      Search for a product
+    Restock     Restock products
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+ Please enter your choice > 
+110
+ Not a valid choice!
+******************************
+ Stock Management Application 
+    App05: by Sarah Cunningham
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Deliver:    Deliver a product
+    Sell:       Sell a product
+    Low_Stock   Print low_stock
+    Search      Search for a product
+    Restock     Restock products
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+ Please enter your choice > 
+111
+ Not a valid choice!
+******************************
+ Stock Management Application 
+    App05: by Sarah Cunningham
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Deliver:    Deliver a product
+    Sell:       Sell a product
+    Low_Stock   Print low_stock
+    Search      Search for a product
+    Restock     Restock products
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+ Please enter your choice > 

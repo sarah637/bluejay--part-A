@@ -52,6 +52,14 @@ public class Product
     }
 
     /**
+     * Restock
+     */
+    public void setQuantity(int quantity) 
+    {
+       this.quantity = quantity; 
+    }
+    
+    /**
      * Set a new namefor a product based on ID number.
      */
     public void changeName(int ID, String replacementName)

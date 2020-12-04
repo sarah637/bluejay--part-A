@@ -1,3 +1,4 @@
+
 /**
  * This app provides a user interface to the
  * stock manager so that users can add, edit,
@@ -8,29 +9,33 @@
  */
 public class StockApp
 {
-    public final int FIRST_ID = 101;
-    
     // Use to get user input
-    private InputReader input = new InputReader();
-
+    
     public static final char CLEAR_CODE = '\u000c';
 
     public static final String QUIT = "QUIT";
     public static final String ADD =  "ADD";
     public static final String PRINT_ALL =  "PRINTALL";
-    
+    public static final String REMOVE = "REMOVE A PRODUCT";
+    public static final String DELIVER = "DELIVER A PRODUCT";
+    public static final String SELL = "SELL A PRODUCT";
+    public static final String SEARCH = "SEARCH FOR A PRODUCT";
+    public static final String LOW_STOCK = "PRINT LOW STOCK";
+    public static final String RESTOCK = "RESTOCK";
    
-    private StockManager manager = new StockManager();
+   
+    private StockManager manager;
     private StockDemo demo;
-    
+    private InputReader input = new InputReader();
+
     
     /**
      * Constructor for objects of class StockApp
      */
     public StockApp()
     {
-        input = new InputReader();
         manager = new StockManager();
+        demo = new StockDemo(manager);
     }
     
     /**
@@ -39,7 +44,6 @@ public class StockApp
     public void run()
     {
         boolean finished = false;
-
         while(!finished)
         {
             printHeading();
@@ -56,7 +60,7 @@ public class StockApp
     }
 
     /**
-     * 
+     * Menu choice to give information
      */
     private void executeMenuChoice(String choice)
     { 
@@ -67,6 +71,30 @@ public class StockApp
         else if (choice.equals(PRINT_ALL))
         {
             manager.printAllProducts();
+        }
+        else if (choice.equals(REMOVE))
+        {
+            removeProduct();
+        }
+        else if (choice.equals(DELIVER))
+        {
+            deliverProduct();
+        }
+        else if (choice.equals(SELL))
+        {
+            sellProduct();
+        }
+        else if (choice.equals(SEARCH))
+        {
+            searchProduct();
+        }
+        else if (choice.equals(LOW_STOCK))
+        {
+            manager.printLowStock();
+        }
+        else if (choice.equals(RESTOCK))
+        {
+            manager.RestockProduct();
         }
         else
         {
@@ -84,20 +112,61 @@ public class StockApp
 
         int id = input.getInt("\n Please enter the product ID");
 
-        if(manager.findProduct(id) == null)
+        System.out.println("Please enter the product name");
+        String name = ("getString");
+        
+        if (id != 0 && !name.isBlank())
         {
-            String name = input.getString("\n Please enter the name of the product");
-
-            Product product = new Product(id, name);
-            manager.addProduct(product);
-    
-            System.out.println("\n You have added " + product);
-            System.out.println();
+          Product product = new Product(id, name);
+          manager.addProduct(product);
         }
         else
         {
-            System.out.println("\n Product ID " + id + " already exists");
+          System.out.println("Error occured! blank spaces");  
         }
+    }
+    
+    /**
+     * removing product from list
+     */
+    private void removeProduct()
+    {
+        System.out.println("remove product");
+        int id = input.getInt("\n Please enter the product ID");
+        manager.removeProduct(id);
+    }
+    
+    /**
+     * show delivery of a product
+     */
+    private void deliverProduct()
+    {
+        System.out.println("deliver product"); 
+        int id = input.getInt("\n Please enter the product ID");
+        int amount = input.getInt("\n Please enter the product amount");
+        manager.deliverProduct(id, amount);
+    }
+    
+    /**
+     * method to sell product
+     */
+    private void sellProduct()
+    {
+        System.out.println("sell product");
+        int id = input.getInt("\n Please enter the product ID");
+        int amount = input.getInt("\n Please enter the product amount");
+        manager.sellProduct(id, amount);
+    }
+    
+    /**
+     * how to search for a product
+     */
+    private void searchProduct()
+    {
+        System.out.println("search product");
+        String name = ("getString");
+        System.out.println("prefix");
+        demo.search("prefix");
     }
 
     /**
@@ -108,6 +177,11 @@ public class StockApp
         System.out.println();
         System.out.println("    Add:        Add a new product");
         System.out.println("    Remove:     Remove an old product");
+        System.out.println("    Deliver:    Deliver a product");
+        System.out.println("    Sell:       Sell a product");
+        System.out.println("    Low_Stock   Print low_stock");
+        System.out.println("    Search      Search for a product");
+        System.out.println("    Restock     Restock products");
         System.out.println("    PrintAll:   Print all products");
         System.out.println("    Quit:       Quit the program");
         System.out.println();        

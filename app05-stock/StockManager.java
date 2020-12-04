@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+ import java.util.ArrayList;
 
 /**
  * Manage the stock in a business.
@@ -160,20 +160,16 @@ public class StockManager
      */
     public void printAllProducts()
     {
-        System.out.println("\n Print out low stock!\n");
-
-        for(Product product :stock)
+        for(Product product : stock)
         {
             System.out.println(product);
         }
-        
-        System.out.println();
     }
 
     /**
      * Print products with low stock levels.
      */
-    public void printlowStock()
+    public void printLowStock()
     {
         System.out.println("\n Print out low stock!\n");
         
@@ -188,7 +184,23 @@ public class StockManager
             id++;
         }
     }
-
+    
+    /**
+     * restock products.
+     */
+    public void RestockProduct()
+    
+    {
+       for(Product product : stock)
+       {
+         if (product.getQuantity() <= 10)
+         {
+            product.setQuantity(10);
+         }
+       }
+      
+    }
+    
     /**
      * print heading for testing.
      */

@@ -1,0 +1,54 @@
+Program.main();
+******************************
+ Stock Management Application 
+    App05: by Sarah Cunningham
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Deliver:    Deliver a product
+    Sell:       Sell a product
+    Low_Stock   Print low_stock
+    Search      Search for a product
+    Restock     Restock products
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+ Please enter your choice > 
+search
+search product
+prefix
+******************************
+ Stock Management Application 
+    App05: by Sarah Cunningham
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Deliver:    Deliver a product
+    Sell:       Sell a product
+    Low_Stock   Print low_stock
+    Search      Search for a product
+    Restock     Restock products
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+ Please enter your choice > 
+dolce gusto latta
+ Not a valid choice!
+******************************
+ Stock Management Application 
+    App05: by Sarah Cunningham
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Deliver:    Deliver a product
+    Sell:       Sell a product
+    Low_Stock   Print low_stock
+    Search      Search for a product
+    Restock     Restock products
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+ Please enter your choice > 

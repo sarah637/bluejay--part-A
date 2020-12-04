@@ -27,8 +27,19 @@ public class InputReader
      */
     public String getString(String prompt)
     {
-        System.out.println(prompt);         // print prompt
-        String inputLine = reader.nextLine();
+        String inputLine = null;
+        boolean isValid = false;
+        
+        while(!isValid)
+        {
+            System.out.println(prompt);         // print prompt
+            inputLine = reader.nextLine();
+            if(inputLine.isBlank())
+            {
+                System.out.println("Blank!");
+            }
+            else isValid = true;
+        }
 
         return inputLine;
     }

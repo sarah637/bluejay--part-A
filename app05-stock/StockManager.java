@@ -27,7 +27,16 @@ public class StockManager
      */
     public void addProduct(Product item)
     {
-        stock.add(item);
+        Product product = findProduct(item.getID());
+        
+        if(product == null)
+        {
+            stock.add(item);
+        }
+        else
+        {
+            System.out.println("Duplicate ID!");
+        }
     }
 
     /**
@@ -37,9 +46,11 @@ public class StockManager
     public void removeProduct(int id)
     {
         Product product = findProduct(id);
+        
         if(product != null)
         {
             stock.remove(product);
+            System.out.println("Product Removed!");
         }    
         else  
         {      
@@ -199,6 +210,25 @@ public class StockManager
          }
        }
       
+    }
+    
+    /**
+     * Method to find product from name.
+     */
+    public void search(String prefix)
+    {
+        for(Product product : stock)
+        {
+            String name = product.getName();
+            name = name.toLowerCase();
+            prefix = prefix.toLowerCase();
+
+            if(name.contains(prefix))
+            {
+                System.out.println(product);
+            }
+        }
+
     }
     
     /**

@@ -20,7 +20,7 @@ public class StockApp
     public static final String DELIVER = "DELIVER";
     public static final String SELL = "SELL";
     public static final String SEARCH = "SEARCH";
-    public static final String LOW_STOCK = "LOW STOCK";
+    public static final String LOW_STOCK = "LOWSTOCK";
     public static final String RESTOCK = "RESTOCK";
    
    
@@ -111,11 +111,9 @@ public class StockApp
         System.out.println ("Adding new product\n"); 
 
         int id = input.getInt("\n Please enter the product ID");
-
-        System.out.println("Please enter the product name");
-        String name = ("getString");
+        String name = input.getString("Please enter the product name");
         
-        if (id != 0 && !name.isBlank())
+        if (id != 0)
         {
           Product product = new Product(id, name);
           manager.addProduct(product);
@@ -131,7 +129,8 @@ public class StockApp
      */
     private void removeProduct()
     {
-        System.out.println("remove product");
+        System.out.println("Remove product");
+        
         int id = input.getInt("\n Please enter the product ID");
         manager.removeProduct(id);
     }
@@ -141,9 +140,12 @@ public class StockApp
      */
     private void deliverProduct()
     {
-        System.out.println("deliver product"); 
+        System.out.println();
+        printSubHeading("Delivering Product");
+        
         int id = input.getInt("\n Please enter the product ID");
         int amount = input.getInt("\n Please enter the product amount");
+        
         manager.deliverProduct(id, amount);
     }
     
@@ -152,7 +154,8 @@ public class StockApp
      */
     private void sellProduct()
     {
-        System.out.println("sell product");
+        System.out.println("Sell Product");
+       
         int id = input.getInt("\n Please enter the product ID");
         int amount = input.getInt("\n Please enter the product amount");
         manager.sellProduct(id, amount);
@@ -163,12 +166,13 @@ public class StockApp
      */
     private void searchProduct()
     {
-        System.out.println("search product");
-        String name = ("getString");
-        System.out.println("prefix");
-        demo.search("prefix");
+        printSubHeading("Search Products By Name");
+        
+        String name = input.getString("Please enter the name > ");
+        manager.search(name);
     }
 
+    
     /**
      * Print out a menu of operation choices
      */
@@ -197,4 +201,14 @@ public class StockApp
         System.out.println("    App05: by Sarah Cunningham");
         System.out.println("******************************");
     }
+    
+    /**
+     * Print the title of the program and the authors name
+     */
+    private void printSubHeading(String name)
+    {
+        System.out.println("******************************");
+        System.out.println("   " + name);
+        System.out.println("******************************\n");
+    }    
 }
